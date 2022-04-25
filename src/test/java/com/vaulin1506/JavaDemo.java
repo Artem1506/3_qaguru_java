@@ -18,6 +18,8 @@ public class JavaDemo {
         boolean flag1 = false;
 
         String name = "Artem";
+        String name0 = "Artem";
+        String name1 = "Ivan";
         String text = "Hi";
 
         int[] array1 = new int [] {3, 2, 1} ;
@@ -32,6 +34,9 @@ public class JavaDemo {
         System.out.println ("128/2=" + byte0 / 2); // поломанная переменная
         System.out.println ("3/2=" + byte1 % 2);
         System.out.println ("10000 + 1 =" + (short1++));
+        System.out.println ("10000 + 1 =" + (short1));
+        System.out.println ("10000 + 1 =" + (++short1));
+        System.out.println ("10000 + 1 =" + (short1));
         System.out.println ("10000 - 1 =" + (--short1));
         System.out.println (--short1);
         System.out.println (--int1);
@@ -40,6 +45,7 @@ public class JavaDemo {
         System.out.println (++int1);
         System.out.println ("float1 " + symbol + " double1 = " + (float1+double1));
         System.out.println (int1 == long1);
+        System.out.println (name == name0);
         System.out.println (int1 != long1);
         System.out.println (int1 > long1);
         System.out.println (int1 < long1);
@@ -62,6 +68,34 @@ public class JavaDemo {
         //System.out.println (result1);
         //System.out.println (result2);
         System.out.println (result3);
+
+        if (name.equals("Artem")) {
+            System.out.println("Hi");
+        }
+        if (name.equals("noArtem")) {
+            System.out.println("Hi");
+            } else if (name0.equals("Artem"));{
+            System.out.println(text + name0);
+            } if (name1.equals("Ivan"));{
+            System.out.println("error");
+        }
+        switch (name) {
+            case "Artem":
+            case "Ivan":
+                System.out.println(text + " " + name);
+                break;
+        }
+
+        name = name == name0
+                ? "Artem"
+                : "Ivan";
+
+        if (name == name0) {
+            name = "Artem";
+        } else {
+            name = "Ivan";
+        }
+
 
 
 

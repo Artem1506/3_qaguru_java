@@ -27,7 +27,6 @@ public class JavaDemo {
         array2 [0] = array1[0];
         array2 [1] = array1[2] + array1[0];
 
-
         System.out.println (int1 + long1);
         System.out.println (double1 + double1 + double1);
         System.out.println ("1.5-1.5-1.5=" + (float1 - float1 - float1));
@@ -85,24 +84,14 @@ public class JavaDemo {
                 System.out.println(text + " " + name);
                 break;
         }
-
         name = name == name0
                 ? "Artem"
                 : "Ivan";
-
         if (name == name0) {
             name = "Artem";
         } else {
             name = "Ivan";
         }
-
-
-
-
-
-
-
-
     }
     }
 
